@@ -1,9 +1,21 @@
 .bg {
   background-color: var(--p08);
+  border-bottom: 2px solid var(--p07);
 }
 
 .menuMobile {
   display: none;
+}
+
+.menu {
+  padding: 5px;
+}
+
+.menu
+
+.menu:hover, .menuMobile:hover {
+  background-color: var(--p07);
+  border-radius: 10px;
 }
 
 /* Container do header */
@@ -25,7 +37,6 @@
   display: flex;
   align-items: center;
   background: none;
-  /* padding: 10px; */
   border: solid 1px var(--p07);
   width: 18.75rem;
 }
@@ -132,7 +143,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    margin: 0px 7.5rem;
+    margin: 0px 1.25rem;
   }
   .iconsContainer {
     grid-row: 1;
@@ -150,7 +161,8 @@
     display: none;
   }
   .menuMobile {
-    display: block;
+    display: flex;
+    align-items: center;
     grid-column: 2;
     grid-row: 1;
     justify-self: right;
@@ -159,6 +171,6 @@
 
 @media (max-width: 500px) {
   .container {
-    margin: 0px 20px;
+    margin: 0px 1.25rem;
   }
 }

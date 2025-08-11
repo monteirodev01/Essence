@@ -1,12 +1,19 @@
-// import React from 'react'
+import { React, useState } from "react";
 import css from "./Header.module.css";
 import logo from "../../assets/icons/Essence.svg";
 import searchIcon from "../../assets/icons/search.svg";
 import shoppingBag from "../../assets/icons/shopping-bag.svg";
 import account from "../../assets/icons/account.svg";
 import menu from "../../assets/icons/menu-hamburguer.svg";
+import close from "../../assets/icons/close.svg";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenuIcon = (event: React.MouseEvent) => {
+    event.preventDefault();
+    setIsMenuOpen((prev) => !prev);
+  };
   return (
     <div className={css.bg}>
       <div className={css.container}>
@@ -47,15 +54,28 @@ const Header = () => {
             <a href="">
               <img src={account} width="32px" height="32px" alt="" />
             </a>
-            <a href="">
-              <img src={menu} width="32px" height="32px" alt="" />
-            </a>
+            <button>
+              <img
+                className={css.menu}
+                src={isMenuOpen ? close : menu}
+                width="32px"
+                height="32px"
+                alt=""
+                onClick={toggleMenuIcon}
+              />
+            </button>
           </ul>
         </div>
         <div className={css.menuMobile}>
-          <a href="">
-            <img src={menu} width="32px" height="32px" alt="" />
-          </a>
+          <button>
+            <img
+              src={isMenuOpen ? close : menu}
+              width="32px"
+              height="32px"
+              alt=""
+              onClick={toggleMenuIcon}
+            />
+          </button>
         </div>
       </div>
     </div>

@@ -112,3 +112,10 @@ img {
 ul, li {
   list-style: none;
 }
+
+button {
+  background: none;
+  outline: none;
+  border: unset;
+  cursor: pointer;
+}
