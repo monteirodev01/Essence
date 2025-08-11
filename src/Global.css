@@ -93,3 +93,22 @@
 .font-2-xs {
   font: var(--font-2-xs);
 }
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul, li {
+  list-style: none;
+}

@@ -1,3 +1,164 @@
-.headerBG {
-  background: #000;
+.bg {
+  background-color: var(--p08);
+}
+
+.menuMobile {
+  display: none;
+}
+
+/* Container do header */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  padding: 10px;
+}
+
+/* Container da caixa de pesquisa */
+.searchBox {
+  display: flex;
+  align-items: center;
+  background: none;
+  /* padding: 10px; */
+  border: solid 1px var(--p07);
+  width: 18.75rem;
+}
+
+.searchBox input {
+  padding: 10px;
+  border: none;
+  text-align: center;
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+  background: none;
+}
+
+.searchBox:has(input:focus) {
+  outline: 2px solid;
+  box-shadow: 0 0 12px rgba(26, 33, 77, 0.6)
+}
+
+.searchBox input::placeholder {
+  color: var(--p07);
+}
+
+.searchBox img {
+  margin-right: 10px;
+}
+
+/* Itens da lista de links de navegação */
+.navItens {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navItens a {
+  position: relative;
+  padding: 5px;
+}
+
+.navItens li a::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background: var(--g06);
+  width: 0%;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+}
+
+.navItens li a:hover::before {
+  width: 100%;
+}
+
+/* Container da lista de icones de navegação */
+
+.navIcons {
+  display: flex;
+  gap: 20px;
+}
+
+.navIcons a {
+  padding: 5px;
+}
+
+.navIcons a:hover {
+  background-color: var(--p07);
+  border-radius: 10px;
+}
+
+/* Responsivo */
+
+@media (max-width: 1200px) {
+  .navItens {
+    font-size: 18px;
+  }
+  .searchBox {
+    width: 12rem;
+  }
+  .searchBox input::placeholder {
+    color: transparent;
+  }
+  .searchBox input {
+    text-align: left;
+  }
+}
+
+@media (max-width: 900px) {
+  .navItens {
+    display: none;
+  }
+  .searchBox {
+    width: 24rem;
+  }
+    .searchBox input::placeholder {
+    color: var(--p07);
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 0px 7.5rem;
+  }
+  .iconsContainer {
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: flex-end;
+  }
+  .searchBox {
+    grid-column: 1/-1;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .iconsContainer {
+    display: none;
+  }
+  .menuMobile {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: right;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    margin: 0px 20px;
+  }
 }
