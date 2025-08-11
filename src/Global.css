@@ -1,0 +1,95 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* Colors */
+  --g01: #1a214d;
+  --g02: #1f285e;
+  --g03: #29347a;
+  --g04: #313e92;
+  --g05: #3847a3;
+  --g06: #3d4db1;
+  --p00: #0e0e0e;
+  --p01: #1a1a1a;
+  --p02: #2e2e2e;
+  --p03: #404040;
+  --p04: #717171;
+  --p05: #9c9c9c;
+  --p06: #b3b3b3;
+  --p07: #cccccc;
+  --p08: #dedede;
+  --p08: #f7f7f7;
+
+  /* Fonts */
+  --font-1-xxl: 600 64px/80px "Poppins";
+  --font-1-xl: 600 32px/40px "Poppins";
+  --font-1-l: 400 24px/36px "Poppins";
+  --font-1-m: 400 18px/24px "Poppins";
+  --font-1-m-b: 600 18px/24px "Poppins";
+  --font-1-s: 600 16px/16px "Poppins";
+  --font-1-xs: 600 12px/16px "Poppins";
+  /* ---------------------------------- */
+  --font-2-xxl: 600 64px/80px "Poiret One";
+  --font-2-xl: 600 32px/40px "Poiret One";
+  --font-2-l: 400 24px/36px "Poiret One";
+  --font-2-m: 400 18px/24px "Poiret One";
+  --font-2-m-b: 600 18px/24px "Poiret One";
+  --font-2-s: 600 16px/16px "Poiret One";
+  --font-2-xs: 600 16px/12px "Poiret One";
+}
+
+.font-1-xxl {
+  font: var(--font-1-xxl);
+}
+
+.font-1-xl {
+  font: var(--font-1-xl);
+}
+
+.font-1-l {
+  font: var(--font-1-l);
+}
+
+.font-1-m {
+  font: var(--font-1-m);
+}
+
+.font-1-m-b {
+  font: var(--font-1-m-b);
+}
+
+.font-1-s {
+  font: var(--font-1-s);
+}
+
+.font-1-xs {
+  font: var(--font-1-xs);
+}
+
+.font-2-xxl {
+  font: var(--font-2-xxl);
+}
+
+.font-2-xl {
+  font: var(--font-2-xl);
+}
+
+.font-2-l {
+  font: var(--font-2-l);
+}
+
+.font-2-m {
+  font: var(--font-2-m);
+}
+
+.font-2-m-b {
+  font: var(--font-2-m-b);
+}
+
+.font-2-s {
+  font: var(--font-2-s);
+}
+
+.font-2-xs {
+  font: var(--font-2-xs);
+}
