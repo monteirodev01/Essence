@@ -20,7 +20,11 @@ const Header = () => {
 
         {/* Search bar */}
         <div className={css.searchBar}>
-          <input type="text" className="font-1-xs" placeholder="Search for products..." />
+          <input
+            type="text"
+            className="font-1-xs"
+            placeholder="Search for products..."
+          />
           <button>
             <img src={searchIcon} alt="Search Icon" />
           </button>

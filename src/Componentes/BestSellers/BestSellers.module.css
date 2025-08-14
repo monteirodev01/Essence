@@ -1,0 +1,17 @@
+.bestSellers {
+  display: grid;
+  margin-top: 120px;
+  justify-content: center;
+  /* width: 1400px; */
+}
+
+.bestSellersItens {
+  display: grid;
+  grid-template-columns: 1fr 2px 1fr;
+  margin: 2.5rem auto;
+}
+
+.divisor  {
+  width: 2px;
+  background-color: var(--p07);
+}

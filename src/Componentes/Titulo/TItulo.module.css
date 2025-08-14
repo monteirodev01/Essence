@@ -1,0 +1,12 @@
+.titulo {
+  width: max-content;
+}
+
+.titulo::after {
+  content: "";
+  display: block;
+  background: var(--g02);
+  margin-top: 10px;
+  height: 2px;
+  width: 70%;
+}

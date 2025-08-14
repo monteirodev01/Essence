@@ -1,5 +1,6 @@
 .bg {
   background: var(--p08);
+  border-bottom: 2px solid var(--p07);
 }
 
 /* Container header */
@@ -75,12 +76,13 @@
 .dropDownLinks ul {
   display: grid;
   gap: 20px;
+  padding: 20px;
 }
 
 .linksItems li:hover .dropDownLinks {
   display: block;
   position: absolute;
-  background: var(--g01);
+  background: var(--p08);
   padding: 20px;
 }
 
