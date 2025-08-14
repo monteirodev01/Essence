@@ -8,77 +8,140 @@ import menu from "../../assets/icons/menu-hamburguer.svg";
 import close from "../../assets/icons/close.svg";
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenuIcon = (event: React.MouseEvent) => {
-    event.preventDefault();
-    setIsMenuOpen((prev) => !prev);
-  };
   return (
-    <div className={css.bg}>
+    // Header background
+    <header className={css.bg}>
+      {/* Container */}
       <div className={css.container}>
-        <div className={css.logo}>
-          <a href="">
-            <img src={logo} alt="" />
-          </a>
-        </div>
-        <div className={css.searchBox}>
-          <input
-            type="text"
-            className={`font-2-xs`}
-            placeholder="O que você procura?"
-          />
-          <img src={searchIcon} width="18px" height="18px" />
-        </div>
-        <div className={`${css.navContainer} font-2-l`}>
-          <ul className={css.navItens}>
-            <li>
-              <a href="">Perfumaria</a>
-            </li>
-            <li>
-              <a href="">Cosméticos</a>
-            </li>
-            <li>
-              <a href="">Promoções</a>
-            </li>
-            <li>
-              <a href="">Lançamentos</a>
-            </li>
-          </ul>
-        </div>
-        <div className={css.iconsContainer}>
-          <ul className={css.navIcons}>
-            <a href="">
-              <img src={shoppingBag} width="32px" height="32px" alt="" />
-            </a>
-            <a href="">
-              <img src={account} width="32px" height="32px" alt="" />
-            </a>
-            <button>
-              <img
-                className={css.menu}
-                src={isMenuOpen ? close : menu}
-                width="32px"
-                height="32px"
-                alt=""
-                onClick={toggleMenuIcon}
-              />
-            </button>
-          </ul>
-        </div>
-        <div className={css.menuMobile}>
+        {/* Logo */}
+        <a href="#" className={css.logo}>
+          <img src={logo} alt="Essence Logo" />
+        </a>
+
+        {/* Search bar */}
+        <div className={css.searchBar}>
+          <input type="text" className="font-1-xs" placeholder="Search for products..." />
           <button>
-            <img
-              src={isMenuOpen ? close : menu}
-              width="32px"
-              height="32px"
-              alt=""
-              onClick={toggleMenuIcon}
-            />
+            <img src={searchIcon} alt="Search Icon" />
           </button>
         </div>
+
+        {/* Navigation links */}
+        <nav className={`${css.navLinks} font-1-m`}>
+          <ul className={css.linksItems}>
+            <li>
+              <a href="">PERFUMARIA</a>
+              <div className={css.dropDownLinks}>
+                <ul className={css.dropDownItems}>
+                  <li>
+                    <a href="">SEU LINK AQUI</a>
+                  </li>
+                  <li>
+                    <a href="">SEU LINK AQUI</a>
+                  </li>
+                  <li>
+                    <a href="">SEU LINK AQUI</a>
+                  </li>
+                  <li>
+                    <a href="">SEU LINK AQUI</a>
+                  </li>
+                  <li>
+                    <a href="">SEU LINK AQUI</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="">COSMÉTICOS</a>
+              <div className={css.dropDownLinks}>
+                <ul>
+                  <li>
+                    <a href="">SEU LINK AQUI</a>
+                  </li>
+                  <li>
+                    <a href="">SEU LINK AQUI</a>
+                  </li>
+                  <li>
+                    <a href="">SEU LINK AQUI</a>
+                  </li>
+                  <li>
+                    <a href="">SEU LINK AQUI</a>
+                  </li>
+                  <li>
+                    <a href="">SEU LINK AQUI</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="">PROMOÇÕES</a>
+              <div className={css.dropDownLinks}>
+                <ul>
+                  <li>
+                    <a href="">SEU LINK AQUI</a>
+                  </li>
+                  <li>
+                    <a href="">SEU LINK AQUI</a>
+                  </li>
+                  <li>
+                    <a href="">SEU LINK AQUI</a>
+                  </li>
+                  <li>
+                    <a href="">SEU LINK AQUI</a>
+                  </li>
+                  <li>
+                    <a href="">SEU LINK AQUI</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="">LANÇAMENTOS</a>
+              <div className={css.dropDownLinks}>
+                <ul>
+                  <li>
+                    <a href="">SEU LINK AQUI</a>
+                  </li>
+                  <li>
+                    <a href="">SEU LINK AQUI</a>
+                  </li>
+                  <li>
+                    <a href="">SEU LINK AQUI</a>
+                  </li>
+                  <li>
+                    <a href="">SEU LINK AQUI</a>
+                  </li>
+                  <li>
+                    <a href="">SEU LINK AQUI</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        {/* Navigation icons */}
+        <nav className={css.navIcons}>
+          <ul className={css.iconsItems}>
+            <li className={`${css.shoppingBag} ${css.iconItem}`}>
+              <a href="">
+                <img src={shoppingBag} alt="" />
+              </a>
+            </li>
+            <li className={`${css.account} ${css.iconItem}`}>
+              <a href="">
+                <img src={account} alt="" />
+              </a>
+            </li>
+            <li className={`${css.menu} ${css.iconItem}`}>
+              <a href="">
+                <img src={menu} alt="" />
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div>
+    </header>
   );
 };
 
