@@ -94,6 +94,16 @@
   font: var(--font-2-xs);
 }
 
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--p08);
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -109,7 +119,8 @@ img {
   max-width: 100%;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
 

@@ -1,0 +1,62 @@
+.gridContainer {
+  margin-top: 120px;
+}
+.filter {
+  margin-top: 80px;
+}
+.productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 80px;
+}
+.produtoItem {
+  display: flex;
+  flex-direction: column;
+  width: 14rem;
+  height: 26rem;
+  border: 1px solid var(--p07);
+  background-color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.itemTitulo {
+  margin: 10px 0;
+}
+
+.itemDescricao {
+  flex-grow: 1;
+  color: var(--p05);
+}
+
+.itemPreco {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: left;
+  align-items: center;
+}
+
+.itemDesconto {
+  color: green;
+  opacity: 50%;
+}
+.itemBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--p07);
+  padding: 5px;
+}
+
+.itemBtn:hover {
+  background-color: var(--g05);
+  color: white;
+  transition: .2s;
+}
+
+.itemBtn img {
+  margin-right: 8px;
+}

@@ -6,7 +6,7 @@ import Malbec from "../../assets/malbec.jpg";
 
 const BestSellers = () => {
   return (
-    <section className={css.bestSellers}>
+    <section className={`container ${css.bestSellers}`}>
       <Titulo titulo="Marcas mais vendidas" />
 
       <div className={css.bestSellersItens}>
