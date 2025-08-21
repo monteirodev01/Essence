@@ -1,0 +1,22 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.oboticario {
+  grid-column: 1/-1;
+  max-width: max-content;
+}
+.eudora {
+  grid-column: 2/-1;
+  width: max-content;
+  justify-self: right;
+}
+
+.oui {
+  grid-column: 1/-1;
+  max-width: max-content;
+}
+
