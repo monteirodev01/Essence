@@ -60,3 +60,17 @@
 .itemBtn img {
   margin-right: 8px;
 }
+
+
+.loadMore {
+  display: grid;
+  margin: 40px auto;
+  justify-items: center;
+}
+
+.plusBtn {
+  border: 2px solid var(--p07);
+  padding: 10px;
+  width: max-content;
+  border-radius: 4px;
+}
