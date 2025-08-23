@@ -1,6 +1,7 @@
 .bg {
   border-top: 2px solid var(--p07);
   border-bottom: 2px solid var(--p07);
+  background-color: white;
 }
 
 .footer {
@@ -25,5 +26,5 @@
 }
 
 .copy {
-  
+
 }

@@ -7,6 +7,7 @@ import Promocoes from './Componentes/Promocoes/Promocoes'
 import Banners from './Componentes/Banners/Banners'
 import NewsLetters from './Componentes/NewsLetters/NewsLetters'
 import Footer from './Componentes/Footer/Footer'
+import Copy from './Componentes/Footer/Copy'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Banners />
       <NewsLetters />
       <Footer />
+      <Copy />
     </div>
   )
 }
