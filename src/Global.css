@@ -130,3 +130,18 @@ button {
   border: unset;
   cursor: pointer;
 }
+
+input[type="checkbox"] {
+  appearance: none; /* Para a maioria dos navegadores modernos */
+  -webkit-appearance: none; /* Para navegadores baseados em WebKit */
+  -moz-appearance: none; /* Para Firefox */
+  background-color: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; /* zera a margem para garantir o efeito */
+}
