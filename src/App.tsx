@@ -6,6 +6,7 @@ import FathersDay from './Componentes/FathersDay/FathersDay'
 import Promocoes from './Componentes/Promocoes/Promocoes'
 import Banners from './Componentes/Banners/Banners'
 import NewsLetters from './Componentes/NewsLetters/NewsLetters'
+import Footer from './Componentes/Footer/Footer'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Promocoes />
       <Banners />
       <NewsLetters />
+      <Footer />
     </div>
   )
 }
